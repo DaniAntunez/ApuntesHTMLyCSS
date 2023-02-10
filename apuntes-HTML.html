@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <title>apuntes-HTML</title>
+    <link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+	  <header>
+	    <h1 class="title-titulo1 big" id="titulo1">titulo1</h1>
+	    <h2>titulo2</h2>
+	    <p>parrafo en el header</p>
+		  <img src="url" alt="texto">      
+    </header>
+	  
+	  <main>
+      
+      <h1 class="title-formularios">formularios</h1>
+      <form action="/">        
+        <fieldset>
+          <legend>fieldset hace agrupaciones en el formulario</legend>
+          <label for="texto1">introduce1</label>
+          <input type="text" id="texto1">       
+        </fieldset>
+        
+        <fieldset>
+          <legend>agrupacion2 en el formulario</legend>
+          <label>
+            introduce2
+            <input type="text" placeholder="texto descriptivo">
+          </label>         
+        </fieldset>
+        
+        <fieldset>
+          <legend>agrupacion3 en el formulario</legend>
+          <ul>
+            <p>ul hace listas no enumeradas</p>
+            <li>elemento1 de la lista</li>
+            <li>elemento2 de la lista</li>
+          </ul>
+          <ol>
+            <p>ol hace listas enumeradas</p>
+            <li>elemento1 de la lista</li>
+            <li>elemento2 de la lista</li>
+          </ol>
+        </fieldset>
+        
+        <fieldset>
+          <legend>agrupacion4 en el formulario</legend>
+          <p>diferentes input</p>
+          <input type="text" minlenght="2" maxlenght="10">
+          <input type="number" min="1" max="50" step="5">
+          <input type="email" required>
+          <input type="date">
+          <input type="password" pattern="[A-Za-z0-9]+" required>
+          <!-- https://www.html5pattern.com/ -->
+          <input type="file">          
+          
+          <p>con checkbox podemos seleccionar varios:
+          <input type="checkbox" name="checkbox-grupo1">
+          <input type="checkbox" name="checkbox-grupo1">
+          <input type="checkbox" name="checkbox-grupo1">
+          </p>
+          <p>con radio solo puede haber uno seleccionado y en este caso afinamos colocando un label a cada elemento:
+          <label for="radio1">texto1</label>
+          <input type="radio" name="radio-grupo1" id="radio1">
+          <label for="radio2">texto2</label>
+          <input type="radio" name="radio-grupo1" id="radio2">
+          <label for="radio3">texto3</label>
+          <input type="radio" name="radio-grupo1" id="radio3">
+          </p>
+          <p>
+          <textarea name="" id="" cols="30" rows="5" placeholder="texto descriptivo"></textarea>
+          </p>
+          <p>
+           <select>
+             <option value="valor1">select1</option>
+             <option value="valor2">select2</option>
+             <option value="valor3">select3</option>
+           </select>
+          </p>
+        </fieldset>
+        
+        <input type="reset">
+        <button>enviar1</button>
+        <input type="submit" value="enviar2">
+      </form>
+      
+      <h1 class="title-divisorias">etiquetas divisorias</h1>
+      <div>div hace bloques con salto de linea
+        <section>
+          <article>            
+          </article>
+        </section>
+      </div>
+      <span>por el contrario span hace bloques en la misma linea</span><span class="text-red">otro span</span>
+      <p>
+      <div class="box background-red">podemos agrupar div en la misma línea de forma dinámica según el ancho de la pantalla</div>
+      <div class="box background-blue">div2</div>
+      <div class="box background-green">div3</div>
+      
+      <h1>posicionamiento</h1>
+      <p>posicionamiento según scroll (fixed, sticky)</p>
+      <div class="fixed">position fixed</div>
+      <div class="sticky">position sticky</div>
+      
+      <p>posicionamiento según web (relative) o según el anterior padre relative (absolute)</p>
+      <div class="relative">box relative
+        <div class="absolute">box absolute</div>
+      </div>
+                    
+      </p><strong>margin</strong> empuja desde un borde hacia el exterior, espaciado fuera del elemento (separación entre cajas por la central)</p>
+      <p>por el contrario <strong>padding</strong> empuja desde un borde hacia el interior, espaciado dentro del elemento (separación del texto desde el borde de la caja)</p>
+      <div class="box2">divA</div>
+      <div class="box2 margin padding">divB</div>
+      <div class="box2">divC</div>
+  
+      <p>Añadimos márgenes a span</p>
+      <span class="span">span1</span>
+      <span class="span">span2</span>
+      <span class="span">span3</span>
+  
+      <h1 class="title-tablas">tablas</h1>
+      <p>tr indica filas y columnas con th negrita o td normal</p>
+      <table>
+        <thead>
+          <tr>
+            <th>columna1</th>
+            <th>columna2</th>
+            <th>columna3</th>
+          </tr>
+        </thead>
+        <body>
+          <tr>
+            <td>linea1-1</td>
+            <td>linea1-2</td>
+            <td>linea1-3</td>
+          </tr>
+          <tr>
+            <td>linea2-1</td>
+            <td>linea2-2</td>
+            <td>linea2-3</td>
+          </tr>          
+        </body>
+        <tfoot>
+          <tr>
+            <td>-</td>
+            <td>-</td>
+            <th>TOTAL</th>
+          </tr>
+        </tfoot>
+      </table>
+      
+      <h1 class="title-priorizar">priorizar textos</h1>
+      <p>con estas etiquetas damos prioridad al texto sin importar su estilo</p>
+      <p>soy un texto <em>con enfasis</em></p>
+      <p>soy un texto <strong>en negrita</strong></p>
+      
+    </main>
+
+    <footer>
+      <a href="url">enlace en el footer</a>
+    </footer>
+    
+	</body>
+</html>
